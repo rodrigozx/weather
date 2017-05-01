@@ -1,9 +1,12 @@
 {
   "name": "book_list",
   "version": "1.0.0",
-  "description": "Simple starter package for Redux with React and Babel support",
+  "description": "pruebas",
   "main": "index.js",
-  "repository": "https://github.com/rodrigozx/book_list.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigozx/book_list.git"
+  },
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
@@ -33,5 +36,13 @@
     "react-redux": "4.3.0",
     "react-router": "^2.0.1",
     "redux": "^3.0.4"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/rodrigozx/book_list/issues"
+  },
+  "homepage": "https://github.com/rodrigozx/book_list#readme",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": []
 }
