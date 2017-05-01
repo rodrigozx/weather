@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rodrigozx/book_list.git"
+    "url": "git+https://github.com/rodrigozx/weather.git"
   },
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
@@ -38,9 +38,9 @@
     "redux": "^3.0.4"
   },
   "bugs": {
-    "url": "https://github.com/rodrigozx/book_list/issues"
+    "url": "https://github.com/rodrigozx/weather/issues"
   },
-  "homepage": "https://github.com/rodrigozx/book_list#readme",
+  "homepage": "https://github.com/rodrigozx/weather#readme",
   "directories": {
     "test": "test"
   },
