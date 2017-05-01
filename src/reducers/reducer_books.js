@@ -3,10 +3,10 @@
 export default function (){
  
   return[
-    {title: 'El libro de la selva'},
-    {title: 'Hamblet'},
-    {title: 'De la tierra a la luna'},   
-    {title: 'El codigo da vinci'}
+    {title: 'El libro de la selva', pages: 100},
+    {title: 'Hamblet', pages: 101},
+    {title: 'De la tierra a la luna', pages: 102},   
+    {title: 'El codigo da vinci', pages: 103}
   ]
 }
 

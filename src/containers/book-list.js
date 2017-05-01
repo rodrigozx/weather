@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 //funcion de la librer'ia para conectar react con redux
 import { connect } from 'react-redux';
 //función creada en acciones para saber que seleccioné un libro
-import {selectBook} from '../actions/index';
+import { selectBook } from '../actions/index';
 
 //
 import {bindActionCreators} from 'redux';
