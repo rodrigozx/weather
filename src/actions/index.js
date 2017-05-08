@@ -5,6 +5,7 @@ const API_KEY = "7cfe85b2543376211f3b5568dfe15b9c";
 
 //embbebo la api key en la url
 const ROOT_URL = `http://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`;
+    //example http://api.openweathermap.org/data/2.5/forecast?appid=7cfe85b2543376211f3b5568dfe15b9c&q=London,us
 
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 

@@ -2,32 +2,32 @@
 // Se importan las classes de react
 import React, {Component} from 'react';
 
- import {connect}  from 'react-redux';
-// import {bindActionCreators}  from 'redux';
-// import {fetchWeather}  from '../actions/index';
+import {connect}  from 'react-redux';
 
-// // Se define una nueva clase "WheatherList"
-// // contiene una lista de componentes
-// class WheatherList extends Component{
+import {Sparklines, SparklinesLine} from 'react-sparklines';
 
-//     // Se define el constructor con el metodo super
-//     constructor(props){
-//         super(props);
-//         //setea el estado "vacío" para cuando se crea el componente
-//         this.state = {term: ''};
-        
-//     }
 
-class WheatherList extends Component{     
+class WeatherList extends Component{     
 
+    //esta función renderiza una sola fila
     renderWeather(cityData){
         const name = cityData.city.name;
+        const temps = cityData.list.map(weather => weather.main.temp);
+        {console.log(weather.main.temp)}
 
         return(
+
             <tr key={name}>
-                <td>{name}</td>
+                {/*<td>{name}</td>
+                <td>
+                    
+                    <SparkLines heigth={130} width={180} data={temps}>
+                        <SparklinesLine color='green' />
+                    </SparkLines>
+                </td>*/}
             </tr>
         );
+
     }
 
     render(){
@@ -54,4 +54,4 @@ function mapStateToProps({weather}){
     return {weather: weather}; //es igual a {weather} === {weather: weather}
 }
 
-export default connect(mapStateToProps)(WheatherList);
+export default connect(mapStateToProps)(WeatherList);
