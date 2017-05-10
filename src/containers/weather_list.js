@@ -13,7 +13,7 @@ class WeatherList extends Component{
     renderWeather(cityData){
         const name = cityData.city.name;
         const temps = cityData.list.map(weather => weather.main.temp);
-        {console.log(weather.main.temp)}
+        {console.log(temps)}
 
         return(
 
@@ -51,7 +51,8 @@ class WeatherList extends Component{
 
 
 function mapStateToProps({weather}){
-    return {weather: weather}; //es igual a {weather} === {weather: weather}
+    //return {weather: weather}; //es igual a {weather} === {weather: weather}
+    return {weather}; //es igual a {weather} === {weather: weather}    
 }
 
 export default connect(mapStateToProps)(WeatherList);
