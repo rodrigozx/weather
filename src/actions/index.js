@@ -11,7 +11,7 @@ export const FETCH_WEATHER = 'FETCH_WEATHER';
 
 export function fetchWeather(city){
 
-    const url = `${ROOT_URL}&q=${city},uy`;
+    const url = `${ROOT_URL}&q=${city},uy&units=metric`;
     const request = axios.get(url);
     
 // console.log('Request:', request);
